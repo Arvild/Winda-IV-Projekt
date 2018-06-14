@@ -415,19 +415,19 @@ void Draw_passengers_3(HDC hdc)
 	Graphics graphics(hdc);
 	Pen pen_white(Color(255, 255, 255, 255));
 	Pen pen_black(Color(255, 0, 0, 0));
-
 	for (int i = 0; i < size; i++)
 	{
-		graphics.DrawLine(&pen_black, 225 - i * 25, 670, 240 - i * 25, 670);
-		graphics.DrawLine(&pen_black, 225 - i * 25, 670, 225 - i * 25, 650);
-		graphics.DrawLine(&pen_black, 240 - i * 25, 670, 240 - i * 25, 650);
+		graphics.DrawLine(&pen_black, 225 - i * 15, 180, 240 - i * 15, 180);
+		graphics.DrawLine(&pen_black, 225 - i * 15, 180, 225 - i * 15, 200);
+		graphics.DrawLine(&pen_black, 240 - i * 15, 180, 240 - i * 15, 200);
 	}
 	for (int i = size; i < 11; i++)
 	{
-		graphics.DrawLine(&pen_white, 225 - i * 25, 670, 240 - i * 25, 670);
-		graphics.DrawLine(&pen_white, 225 - i * 25, 670, 225 - i * 25, 651);
-		graphics.DrawLine(&pen_white, 240 - i * 25, 670, 240 - i * 25, 651);
+		graphics.DrawLine(&pen_white, 225 - i * 15, 180, 240 - i * 15, 180);
+		graphics.DrawLine(&pen_white, 225 - i * 15, 180, 225 - i * 15, 199);
+		graphics.DrawLine(&pen_white, 240 - i * 15, 180, 240 - i * 15, 199);
 	}
+
 }
 
 void Draw_passengers_2(HDC hdc)
@@ -436,19 +436,19 @@ void Draw_passengers_2(HDC hdc)
 	Graphics graphics(hdc);
 	Pen pen_white(Color(255, 255, 255, 255));
 	Pen pen_black(Color(255, 0, 0, 0));
-
 	for (int i = 0; i < size; i++)
 	{
-		graphics.DrawLine(&pen_black, 225 - i * 25, 520, 240 - i * 25, 520);
-		graphics.DrawLine(&pen_black, 225 - i * 25, 520, 225 - i * 25, 500);
-		graphics.DrawLine(&pen_black, 240 - i * 25, 520, 240 - i * 25, 500);
+		graphics.DrawLine(&pen_black, 225 - i * 25, 330, 240 - i * 25, 330);
+		graphics.DrawLine(&pen_black, 225 - i * 25, 330, 225 - i * 25, 350);
+		graphics.DrawLine(&pen_black, 240 - i * 25, 330, 240 - i * 25, 350);
 	}
 	for (int i = size; i < 11; i++)
 	{
-		graphics.DrawLine(&pen_white, 225 - i * 25, 520, 240 - i * 25, 520);
-		graphics.DrawLine(&pen_white, 225 - i * 25, 520, 225 - i * 25, 501);
-		graphics.DrawLine(&pen_white, 240 - i * 25, 520, 240 - i * 25, 501);
+		graphics.DrawLine(&pen_white, 225 - i * 25, 330, 240 - i * 25, 330);
+		graphics.DrawLine(&pen_white, 225 - i * 25, 330, 225 - i * 25, 349);
+		graphics.DrawLine(&pen_white, 240 - i * 25, 330, 240 - i * 25, 349);
 	}
+	
 }
 void Draw_passengers_1(HDC hdc)
 {
@@ -456,19 +456,19 @@ void Draw_passengers_1(HDC hdc)
 	Graphics graphics(hdc);
 	Pen pen_white(Color(255, 255, 255, 255));
 	Pen pen_black(Color(255, 0, 0, 0));
-
 	for (int i = 0; i < size; i++)
 	{
-		graphics.DrawLine(&pen_black, 225 - i * 25, 370, 240 - i * 25, 370);
-		graphics.DrawLine(&pen_black, 225 - i * 25, 370, 225 - i * 25, 350);
-		graphics.DrawLine(&pen_black, 240 - i * 25, 370, 240 - i * 25, 350);
+		graphics.DrawLine(&pen_black, 225 - i * 25, 480, 240 - i * 25, 480);
+		graphics.DrawLine(&pen_black, 225 - i * 25, 480, 225 - i * 25, 500);
+		graphics.DrawLine(&pen_black, 240 - i * 25, 480, 240 - i * 25, 500);
 	}
 	for (int i = size; i < 11; i++)
 	{
-		graphics.DrawLine(&pen_white, 225 - i * 25, 370, 240 - i * 25, 370);
-		graphics.DrawLine(&pen_white, 225 - i * 25, 370, 225 - i * 25, 351);
-		graphics.DrawLine(&pen_white, 240 - i * 25, 370, 240 - i * 25, 351);
+		graphics.DrawLine(&pen_white, 225 - i * 25, 480, 240 - i * 25, 480);
+		graphics.DrawLine(&pen_white, 225 - i * 25, 480, 225 - i * 25, 499);
+		graphics.DrawLine(&pen_white, 240 - i * 25, 480, 240 - i * 25, 499);
 	}
+
 }
 void Draw_passengers_0(HDC hdc)
 {
@@ -476,19 +476,19 @@ void Draw_passengers_0(HDC hdc)
 	Graphics graphics(hdc);
 	Pen pen_white(Color(255, 255, 255, 255));
 	Pen pen_black(Color(255, 0, 0, 0));
-
 	for (int i = 0; i < size; i++)
 	{
-		graphics.DrawLine(&pen_black, 225 - i * 15, 220, 240 - i * 15, 220);
-		graphics.DrawLine(&pen_black, 225 - i * 15, 220, 225 - i * 15, 200);
-		graphics.DrawLine(&pen_black, 240 - i * 15, 220, 240 - i * 15, 200);
+		graphics.DrawLine(&pen_black, 225 - i * 25, 630, 240 - i * 25, 630);
+		graphics.DrawLine(&pen_black, 225 - i * 25, 630, 225 - i * 25, 650);
+		graphics.DrawLine(&pen_black, 240 - i * 25, 630, 240 - i * 25, 650);
 	}
 	for (int i = size; i < 11; i++)
 	{
-		graphics.DrawLine(&pen_white, 225 - i * 15, 220, 240 - i * 15, 220);
-		graphics.DrawLine(&pen_white, 225 - i * 15, 220, 225 - i * 15, 201);
-		graphics.DrawLine(&pen_white, 240 - i * 15, 220, 240 - i * 15, 201);
+		graphics.DrawLine(&pen_white, 225 - i * 25, 630, 240 - i * 25, 630);
+		graphics.DrawLine(&pen_white, 225 - i * 25, 630, 225 - i * 25, 649);
+		graphics.DrawLine(&pen_white, 240 - i * 25, 630, 240 - i * 25, 649);
 	}
+
 }
 
 void MyOnPaint(HDC hdc)

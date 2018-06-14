@@ -448,7 +448,7 @@ void Draw_passengers_2(HDC hdc)
 		graphics.DrawLine(&pen_white, 225 - i * 25, 330, 225 - i * 25, 349);
 		graphics.DrawLine(&pen_white, 240 - i * 25, 330, 240 - i * 25, 349);
 	}
-	
+
 }
 void Draw_passengers_1(HDC hdc)
 {
@@ -511,12 +511,7 @@ void MyOnPaint(HDC hdc)
 	graphics.DrawLine(&pen_black, 0, 500, 250, 500);
 	graphics.DrawLine(&pen_black, 0, 350, 250, 350);
 	graphics.DrawLine(&pen_black, 0, 200, 250, 200);
-	
-	Draw_passengers_0(hdc);
-	Draw_passengers_1(hdc);
-	Draw_passengers_2(hdc);
-	Draw_passengers_3(hdc);
-	
+
 	int waga = 0;
 	for (int i = 0; i < vectorE.size(); i++)
 	{
@@ -525,13 +520,39 @@ void MyOnPaint(HDC hdc)
 	}
 
 	std::wstring value_wstr = std::to_wstring(waga);
-	const wchar_t* value_str = value_wstr.c_str();                             
+	const wchar_t* value_str = value_wstr.c_str();
 	graphics.DrawString(value_str, -1, &font, PointF(910, 300), &brush);
 
 	if (waga >= 560)
 	{
-	TextOut(hdc, 910, 300, L"PRZECIAZENIE", 12);
+		TextOut(hdc, 910, 300, L"PRZECIAZENIE", 12);
 	}
+
+	TextOut(hdc, 40, 565, L"1", 2);
+	TextOut(hdc, 100, 565, L"2", 2);
+	TextOut(hdc, 160, 565, L"3", 2);
+
+	TextOut(hdc, 40, 415, L"1", 2);
+	TextOut(hdc, 100, 415, L"2", 2);
+	TextOut(hdc, 160, 415, L"3", 2);
+
+	TextOut(hdc, 40, 265, L"1", 2);
+	TextOut(hdc, 100, 265, L"2", 2);
+	TextOut(hdc, 160, 265, L"3", 2);
+
+	TextOut(hdc, 40, 115, L"1", 2);
+	TextOut(hdc, 100, 115, L"2", 2);
+	TextOut(hdc, 160, 115, L"3", 2);
+
+	TextOut(hdc, 700, 300, L"Aktualna waga", 20);
+	
+	
+	Draw_passengers_0(hdc);
+	Draw_passengers_1(hdc);
+	Draw_passengers_2(hdc);
+	Draw_passengers_3(hdc);
+
+
 }
 
 
@@ -767,16 +788,16 @@ BOOL InitInstance(HINSTANCE hInstance, int nCmdShow)
 		(HMENU)ID_BUTTON2F3,
 		hInstance,
 		NULL);
-	
-	hwndButton = CreateWindow(TEXT("EDIT"),                      
-		TEXT("Aktualna waga:"),                  
-		WS_CHILD | WS_VISIBLE | BS_PUSHBUTTON,  
-		800, 300,                                  
-		110, 25,                              
-		hWnd,                                 
-		(HMENU)slowa,                   
-		hInstance,                           
-		NULL);                               
+
+	hwndButton = CreateWindow(TEXT("EDIT"),
+		TEXT("Aktualna waga:"),
+		WS_CHILD | WS_VISIBLE | BS_PUSHBUTTON,
+		800, 300,
+		110, 25,
+		hWnd,
+		(HMENU)slowa,
+		hInstance,
+		NULL);
 
 
 	OnCreate(hWnd);

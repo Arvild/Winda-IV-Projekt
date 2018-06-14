@@ -532,17 +532,17 @@ void MyOnPaint(HDC hdc)
 	TextOut(hdc, 100, 565, L"2", 2);
 	TextOut(hdc, 160, 565, L"3", 2);
 
-	TextOut(hdc, 40, 415, L"1", 2);
+	TextOut(hdc, 40, 415, L"0", 2);
 	TextOut(hdc, 100, 415, L"2", 2);
 	TextOut(hdc, 160, 415, L"3", 2);
 
-	TextOut(hdc, 40, 265, L"1", 2);
-	TextOut(hdc, 100, 265, L"2", 2);
+	TextOut(hdc, 40, 265, L"0", 2);
+	TextOut(hdc, 100, 265, L"1", 2);
 	TextOut(hdc, 160, 265, L"3", 2);
 
-	TextOut(hdc, 40, 115, L"1", 2);
-	TextOut(hdc, 100, 115, L"2", 2);
-	TextOut(hdc, 160, 115, L"3", 2);
+	TextOut(hdc, 40, 115, L"0", 2);
+	TextOut(hdc, 100, 115, L"1", 2);
+	TextOut(hdc, 160, 115, L"2", 2);
 
 	TextOut(hdc, 700, 300, L"Aktualna waga", 20);
 	
